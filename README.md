@@ -1,6 +1,6 @@
 # Quick install
 
-Installing Odoo 16 with one command.
+Installing Odoo 17 with one command.
 
 (Supports multiple Odoo instances on one server)
 
@@ -11,7 +11,7 @@ sudo apt install docker docker-compose -y
 ```
 Then
 ``` bash
-curl -s https://raw.githubusercontent.com/thaichikma/docker-odoo/16.0/run.sh | sudo bash -s odoo-one 10012 20012
+curl -s https://raw.githubusercontent.com/thaichikma/docker-odoo/17.0/run.sh | sudo bash -s odoo-one 10012 20012
 ```
 
 to set up first Odoo instance @ `localhost:10012` (default master password: `Masterpass`)
@@ -19,7 +19,7 @@ to set up first Odoo instance @ `localhost:10012` (default master password: `Mas
 and
 
 ``` bash
-curl -s https://raw.githubusercontent.com/thaichikma/docker-odoo/16.0/run.sh | sudo bash -s odoo-two 11012 21012
+curl -s https://raw.githubusercontent.com/thaichikma/docker-odoo/17.0/run.sh | sudo bash -s odoo-two 11012 21012
 ```
 
 to set up another Odoo instance @ `localhost:11012` (default master password: `Masterpass`)
@@ -127,7 +127,7 @@ $ **docker images**
 
 ``` bas
 REPOSITORY                        TAG                 ID                  CREATED             SIZE
-svendowideit/testimage            version3            f5283438590d        16 seconds ago      335.7 MB
+svendowideit/testimage            version3            f5283438590d        17 seconds ago      335.7 MB
 ```
 
 # Live chat
@@ -154,6 +154,6 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 ```
 # docker-compose.yml
 
-* odoo:16.0
+* odoo:17.0
 * postgres:15
 
